@@ -59,9 +59,9 @@ jobs:
     needs: [paper]
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
+      - name: Checkout
         uses: actions/checkout@v2
-        - name: deploy on orphan branch
+      - name: deploy on orphan branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
