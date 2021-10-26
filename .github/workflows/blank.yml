@@ -56,7 +56,7 @@ jobs:
           publish_branch: build
           force_orphan: true
   deploy1 :
-    needs: [paper]
+    needs: [deploy]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
